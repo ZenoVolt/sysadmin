@@ -28,6 +28,20 @@ Run this command in Git Bash, PowerShell, or Command Prompt:
 git config --global url."git@ghes.a-star.edu.sg:".insteadOf "https://ghes.a-star.edu.sg/"
 ```bash
 
+## 2. Select the SSH Client in TortoiseGit
+
+In TortoiseGit, open **Settings > Network > SSH Client** and select the SSH client that matches your key setup.
+
+For Git's standard OpenSSH client, select or browse to:
+
+ssh.exe or 
+
+```text
+C:\Program Files\Git\usr\bin\ssh.exe
+```
+
+If you use a PuTTY-format key with Pageant, select **TortoisePlink** instead and use the corresponding `TortoisePlink.exe` executable. The selected client must be able to access the SSH key for `ghes.a-star.edu.sg`.
+
 
 ## 8. Undo / Remove the SSH Rewrite
 
